@@ -27,11 +27,12 @@ fun person(names:Array<String>): Int{
 }
 fun robot(ages:Int){
     when(ages){
-        0,1,2,3,4,5-> println("Glass of milk")
-        6,7,8,8,9,10,11,12,13,14,15-> println("Bottle of fanta orange")
+       in 0..5-> println("Glass of milk")
+       in 7..14-> println("Bottle of fanta orange")
         else-> println("Bottle of coca cola")
     }
 }
+//start with else if side to be if
 fun numArrays(num: Int) {
     for (num in 1..100)
         if (num%3==0){
@@ -44,6 +45,6 @@ fun numArrays(num: Int) {
         println("Fizzbuzz")
         }
     else{
-        println("Not among")
+        println(num)
         }
 }
